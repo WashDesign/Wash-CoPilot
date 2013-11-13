@@ -13,7 +13,7 @@ body {
 	font-family: $serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #565656;
+	color: $black;
 }
 
 
@@ -21,7 +21,7 @@ body {
 /* ! LAYOUT & GRID STYLES     */
 /******************************/
 
-.wrap {
+.l-constrained {
 	width: 96%;
 	margin: 0 auto;
 }
@@ -36,49 +36,52 @@ body {
 }
 
 
-*******************************
+/*******************************
 /* ! NAVIGATION STYLES        */
 /******************************/
 
-.primary-nav {
+/* Primary
+-----------------------------*/
+.nav--primary {
 
 	ul {
 		margin: 0;
 		padding: 0;	
 	}
 
-	li.menu-item {
+	/*li*/
+	.nav__item {
 
 		a {
 			display: block;
 			text-decoration: none;
 			padding: 1em;
-			background-color: $grey;
-			border-bottom: 1px solid $black;
-
-			&:hover, &:focus {
-
+		
+			&:hover,
+			&:focus {
+			
 			}
 		}
+		
+		&.nav__item--current {
+	
+			a {}
+	
+		} 
 
-		&:first-child {}
+		/* Primary--Sub
+		-----------------------------*/
+		ul.nav-sub {
 
-		&:last-child {}
-
-
-		/*******************************
-		/* ! SUB NAV STYLES           */
-		/******************************/
-
-		ul.sub-menu {
-
-			li.menu-item {
+			.nav__item {
 
 				a {
 					padding-left: 0.5em;
 
 					&:hover,
-					&:focus {}
+					&:focus {
+						
+					}
 
 					&:link {}
 
@@ -92,55 +95,54 @@ body {
 
 		}
 
-	} /* end .menu li */
+	} /* end .nav__item li */
 
-	li.current {
-
-		a {}
-
-	}  /* end current */
-
-} /* end .primary-nav */
+} /* end .nav--primary */
 
 /*******************************
 /* ! SECONDARY NAV STYLES     */
 /******************************/
 
-.secondary-nav {
+.nav-secondary {
 
 	ul {
 
-		li {
+	}
+	
+	.nav__item {
+
+		a {
+		
+			&:hover,
+			&:focus {
 			
-			a {
-				
 			}
 		}
-
 	}
-
 } /* end .secondary-nav */
-
 
 
 /*******************************
 /* ! SUPPORTING NAV STYLES    */
 /******************************/
 
-.supporting-nav {
+.nav-supporting {
 
 	ul {
 
-		li {
+	}
+	
+	.nav__item {
+
+		a {
 		
-			a {
-				
+			&:hover,
+			&:focus {
+			
 			}
 		}
-
 	}
-
-} /* end .supporting-nav */
+} /* end .secondary-nav */
 
 
 /*******************************
@@ -151,22 +153,28 @@ body {
 	
 }
 
-/*****************************************************************
-/* ! PAGE NAVI STYLES                                           */
-/****************************************************************/
+/* Articel entry content
+-----------------------------*/
+.entry-content {
+	
+}
+	
+	.entry-content__header {
+		
+	}
 
-/*****************************************************************
-/* ! COMMENT STYLES                                             */
-/****************************************************************/
+	.entry-content__section {
+		
+	}
 
-/*****************************************************************
-/* ! COMMENT FORM STYLES                                        */
-/****************************************************************/
 
 /*******************************
 /* ! SIDEBARS & ASIDES        */
 /******************************/
 
+.complementary {
+	
+}
 
 /*******************************
 /* ! FOOTER STYLES            */
@@ -176,11 +184,19 @@ body {
 	
 }
 
-
+/* Copyright
+-----------------------------*/
 .copyright {
 	
 }
+
+/* Credits
+-----------------------------*/
 .credits {
 	
 }
+
+	.credits__link {
+		
+	}
 

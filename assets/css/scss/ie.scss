@@ -4,28 +4,14 @@ Stylesheet: IE Stylesheet
 
 ******************************************************************/
 
-
-// import normalize
 @import "normalize";
-
-// import helpers
 @import "helpers";
-
-// import mixins
 @import "mixins";
-
-// import styleguide
 @import "styleguide";
-
 @import "481up";
-
 @import "grid";
-
 @import "768up";
-
 @import "1030up";
-
-
 
 /******************************************************************
 

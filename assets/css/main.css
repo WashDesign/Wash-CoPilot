@@ -488,8 +488,11 @@ hr {
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ * Make it resposive
  */
 img {
+  max-width: 100%;
+  height: auto;
   vertical-align: middle; }
 
 /*
@@ -573,26 +576,18 @@ Stylesheet: Mixins & Constants Stylesheet
 	@include box-sizing(border-box); 
 */
 /******************************************************************
-Site Name: 
-Author: 
 
 Stylesheet: Styleguide
-
-This stylesheet is loaded with all the core styles the design
-has, UI, UX modules etc.
 
 ******************************************************************/
 /**********************
 /* ! COLOUR SCHEMING */
 /*********************/
 /*********************
-/* ! LINK STYLES		*/
+/* ! LINK STYLES    */
 /********************/
 a {
-  color: #919191;
-  /* on hover */
-  /* on click */
-  /* mobile tap color */ }
+  color: #919191; }
   a:hover, a:focus {
     color: #7a7a7a; }
   a:link {
@@ -604,31 +599,30 @@ a {
 /******************************************************************
 /* ! H1, H2, H3, H4, H5 STYLES									 */
 /*****************************************************************/
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, h2, h3, h4, h5 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-rendering: optimizelegibility;
-  font-weight: 500;
-  /* removing text decoration from all headline links */ }
-  h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
+  font-weight: 500; }
+  h1 a, h2 a, h3 a, h4 a, h5 a {
     text-decoration: none; }
 
-h1, .h1 {
+h1 {
   font-size: 2.5em;
   line-height: 1.333em; }
 
-h2, .h2 {
+h2 {
   font-size: 1.75em;
   line-height: 1.4em;
   margin-bottom: 0.375em; }
 
-h3, .h3 {
+h3 {
   font-size: 1.125em; }
 
-h4, .h4 {
+h4 {
   font-size: 1.1em;
   font-weight: 700; }
 
-h5, .h5 {
+h5 {
   font-size: 0.846em;
   line-height: 2.09em;
   text-transform: uppercase;
@@ -672,8 +666,8 @@ table {
 /*********************
 /* ! FORM UI		*/
 /********************/
-/* Inputs */
-/* Placeholder Styles */
+/* Placeholder Styles 
+-----------------------------*/
 ::-webkit-input-placeholder {
   color: #ccc;
   font-weight: lighter; }
@@ -682,17 +676,18 @@ table {
   color: #ccc;
   font-weight: lighter; }
 
-/* Default input styles */
+/* Default input styles  
+-----------------------------*/
 input[type=name],
 input[type=email],
 input[type=password],
 input[type=text],
 textarea[type=text] {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  font-size: 25px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
   width: 100%;
   color: #999;
-  padding: 10px;
+  padding: 0.5em;
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1); }
@@ -712,8 +707,8 @@ input[type=password]:focus,
 input[type=text]:focus,
 textarea[type=text]:focus {
   outline: none;
-  border: 1px solid #00bce9;
-  box-shadow: 0 0 5px #2da1ec; }
+  border: 1px solid black;
+  box-shadow: 0 0 5px #919191; }
 
 textarea[type=text] {
   height: 200px; }
@@ -726,8 +721,8 @@ input.error {
   border: 1px solid #dd212b;
   box-shadow: 0 0 5px #ed1b24; }
 
-/* Sliders */
-/* (These only work in webkit browsers-be careful! */
+/* Sliders  
+-----------------------------*/
 input[type="range"] {
   -webkit-appearance: none;
   outline: none;
@@ -770,25 +765,30 @@ input[type="range"]::-webkit-slider-thumb:active {
   padding: 5px 18px;
   border: 1px solid; }
 
+/* Warning   
+-----------------------------*/
 .alert-warning {
   border-color: #e8db61;
   background: #ebe077; }
 
+/* Informative  
+-----------------------------*/
 .alert-info {
   border-color: #9acede;
   background: #add7e4; }
 
+/* Error  
+-----------------------------*/
 .alert-error {
   border-color: #ed636f;
   background: #f07a84; }
 
+/* Success  
+-----------------------------*/
 .alert-success {
   border-color: #bccb7d;
   background: #c5d28f; }
 
-/*********************
-/* ! BUTTONS 		*/
-/********************/
 /*
 BASE (MOBILE) SIZE
 */
@@ -804,43 +804,40 @@ body {
   font-family: "Georgia", Cambria, Times New Roman, Times, serif;
   font-size: 100%;
   line-height: 1.5;
-  color: #565656; }
+  color: black; }
 
 /*******************************
 /* ! LAYOUT & GRID STYLES     */
 /******************************/
-.wrap {
+.l-constrained {
   width: 96%;
   margin: 0 auto; }
 
 /*******************************
 /* ! HEADER STYLES            */
 /******************************/
-*******************************
-.primary-nav {
-  /* end .menu li */
-  /* end current */ }
-  *******************************
-  .primary-nav ul {
+/*******************************
+/* ! NAVIGATION STYLES        */
+/******************************/
+/* Primary
+-----------------------------*/
+.nav--primary {
+  /*li*/
+  /* end .nav__item li */ }
+  .nav--primary ul {
     margin: 0;
     padding: 0; }
-  *******************************
-  .primary-nav li.menu-item {
-    /*******************************
-    /* ! SUB NAV STYLES           */
-    /******************************/ }
-    *******************************
-    .primary-nav li.menu-item a {
+  .nav--primary .nav__item {
+    /* Primary--Sub
+    -----------------------------*/ }
+    .nav--primary .nav__item a {
       display: block;
       text-decoration: none;
-      padding: 1em;
-      background-color: #919191;
-      border-bottom: 1px solid black; }
-    *******************************
-    .primary-nav li.menu-item ul.sub-menu li.menu-item a {
+      padding: 1em; }
+    .nav--primary .nav__item ul.nav-sub .nav__item a {
       padding-left: 0.5em; }
 
-/* end .primary-nav */
+/* end .nav--primary */
 /*******************************
 /* ! SECONDARY NAV STYLES     */
 /******************************/
@@ -848,25 +845,22 @@ body {
 /*******************************
 /* ! SUPPORTING NAV STYLES    */
 /******************************/
-/* end .supporting-nav */
+/* end .secondary-nav */
 /*******************************
 /* ! POSTS & CONTENT STYLES   */
 /******************************/
-/*****************************************************************
-/* ! PAGE NAVI STYLES                                           */
-/****************************************************************/
-/*****************************************************************
-/* ! COMMENT STYLES                                             */
-/****************************************************************/
-/*****************************************************************
-/* ! COMMENT FORM STYLES                                        */
-/****************************************************************/
+/* Articel entry content
+-----------------------------*/
 /*******************************
 /* ! SIDEBARS & ASIDES        */
 /******************************/
 /*******************************
 /* ! FOOTER STYLES            */
 /******************************/
+/* Copyright
+-----------------------------*/
+/* Credits
+-----------------------------*/
 /*
 LARGER MOBILE DEVICES
 */
@@ -885,22 +879,9 @@ TABLET & SMALLER LAPTOPS
 @media only screen and (min-width: 48em) {
   /******************************************************************
   
-  
   Stylesheet: Grid Stylesheet
   
   ******************************************************************/
-  /* 4.85%;  } /* grid_1  */
-  /* 13.45%; } /* grid_2  */
-  /* 22.05%; } /* grid_3  */
-  /* 30.75%; } /* grid_4  */
-  /* 39.45%; } /* grid_5  */
-  /* 48%;    } /* grid_6  */
-  /* 56.75%; } /* grid_7  */
-  /* 65.4%;  } /* grid_8  */
-  /* 74.05%; } /* grid_9  */
-  /* 82.7%;  } /* grid_10 */
-  /* 91.35%; } /* grid_11 */
-  /* 100%;   } /* grid_12 */
   /******************************************************************
   
   Stylesheet: Tablet & Small Desktop Stylesheet
@@ -912,8 +893,8 @@ TABLET & SMALLER LAPTOPS
   /*******************************
   /* ! LAYOUT & GRID STYLES     */
   /******************************/
-  .wrap {
-    max-width: 1140px; }
+  .l-constrained {
+    max-width: 67.500em; }
 
   /*******************************
   /* ! HEADER STYLES            */

@@ -25,9 +25,8 @@
 			<link rel="stylesheet" href="assets/css/ie.css">
 		<![endif]-->
 
-
-        <!-- Modernizr goodness-->
-        <script src="assets/js/inc/modernizr-2.6.2.min.js"></script>
+        <!-- Modernizr -->
+        <script src="assets/js/inc/modernizr-2.6.3.min.js"></script>
         
     </head>
     <body>
@@ -36,23 +35,23 @@
         <![endif]-->
 
 	<header class="site-header" role="banner">
-		<div class="wrap grp">
+		<div class="l-constrained grp">
 		
 			<div class="site-logo" itemscope itemtype="http://schema.org/Organization">
-				<a itemprop="url" href="#" rel="home">
+				<a class="site-logo__link" itemprop="url" href="#" rel="home">
 					<h1 class="vhide" itemprop="name">Company Name</h1>
-					<img itemprop="logo" src="" alt="">
+					<img class="site-logo__img" itemprop="logo" src="" alt="">
 			  	</a>
 			</div>
 
-			<nav class="primary-nav" role="navigation">
+			<nav class="nav nav--primary" role="navigation">
 				<ul>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
+					<li class="nav__item nav__item--current"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
 				</ul>
 			</nav>
 			
@@ -60,35 +59,47 @@
 	</header>
 	
 	<main class="site-content" role="main">
-		<div class="wrap grp">
+		<div class="l-constrained grp">
 			<article class="entry-content">
-				<header class="article-header">
-					<h1>Heading 1</h1>
+				<header class="entry-content__header">
+					<h1>Entry Content Heading</h1>
+					<p>Only need header if there is a p or another short header here h2 etc</p>
 				</header>
+				
+				<!-- If has heading check the Toolbox for the mark up -->
+				<section class="entry-content__section" role="region" aria-label="title of section">
+	
+					<p>The content</p>
+						
+				</section>
+				
+				
+				
 			</article>
-			<p>The content</p>
+
 			<aside class="complementary" role="complementary">
 			
 			</aside>
-		</div>
+			
+		</div> 
 	</main>
 	
 	
 	<footer class="site-footer" role="contentinfo"> 
-		<div class="wrap grp">
+		<div class="l-constrained grp">
 
-			<nav class="supporting-nav" role="navigation">
+			<nav class="nav nav--supporting" role="navigation">
 				<ul>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
-					<li><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
+					<li class="nav__item"><a href="#">Menu Item</a></li>
 				</ul>
 			</nav>
 			
-			<div class="postal-address" itemscope itemtype="http://schema.org/PostalAddress">
+			<div class="physical-address" itemscope itemtype="http://schema.org/PostalAddress">
 				<span itemprop="name">Company Name</span>
 				<span itemprop="streetAddress">Street name</span>
 				<span itemprop="postalCode">Post Code</span>
@@ -96,18 +107,17 @@
 				<span itemprop="addressCountry">Country</span>
 			</div>
 			
-			<div class="contact-point">
-				<a href="tel:0123456789" itemprop="telephone">0123456789</a>
-				<a href="mailto:info@example.com" itemprop="email">info@example.com</a>
+			<div class="cta-contact">
+				<a class="cta-contact--tel" href="tel:0123456789" itemprop="telephone">0123456789</a>
+				<a class="cta-contact--mail" href="mailto:info@example.com" itemprop="email">info@example.com</a>
 			</div>
 				
 			
 			<div class="copyright">Company Name &copy 2013</div>
-			<div class="credits"><a href="http://wash-design.co.uk/" target="_blank">A website and brand crafted by <b>Wash</b></a></div>
+			<div class="credits"><a class="credits__link" href="http://wash-design.co.uk/" target="_blank">A website and brand crafted by <b>Wash</b></a></div>
 			
-		</div>
-	</footer>
-	
+		</div> 
+	</footer>	
 		<!-- ADDED http for local development -->
         <script src="http//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="assets/js/inc/jquery-1.9.1.min.js"><\/script>')</script>

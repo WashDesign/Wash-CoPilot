@@ -5,27 +5,15 @@ Stylesheet: Main Stylesheet
 ******************************************************************/
 
 
-//
-// IMPORTING STYLES
-//
-
-// import normalize
 @import "normalize";
-
-// import helpers
 @import "helpers";
-
-// import mixins
 @import "mixins";
-
-// import styleguide
 @import "styleguide";
 
 /*
 BASE (MOBILE) SIZE
 */
 
-// styles in base.scss
 @import "base";
 
 /*
@@ -33,7 +21,6 @@ LARGER MOBILE DEVICES
 */
 @media only screen and (min-width: 30.063em) {
 
-	// styles in 481up.scss
 	@import "481up";
 
 } // end of media query
@@ -43,10 +30,8 @@ TABLET & SMALLER LAPTOPS
 */
 @media only screen and (min-width: 48.000em) {
 
-	// import grids
 	@import "grid";
 
-	// styles in 768up.scss
 	@import "768up";
 
 } // end of media query
@@ -56,7 +41,6 @@ DESKTOP
 */
 @media only screen and (min-width: 64.375em) {
 
-	// styles in 1030up.scss
 	@import "1030up";
 
 } // end of media query
@@ -66,7 +50,6 @@ LARGE VIEWING SIZE
 */
 @media only screen and (min-width: 77.500em) {
 
-	// styles in 1240up.scss
 	@import "1240up";
 
 } // end of media query

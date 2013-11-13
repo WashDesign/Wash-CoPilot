@@ -34,9 +34,12 @@ hr {
 
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ * Make it resposive
  */
 
 img {
+	max-width: 100%;
+	height: auto;
     vertical-align: middle;
 }
 
@@ -97,7 +100,6 @@ textarea {
 	white-space: nowrap;
 	overflow: hidden;
 }
-
 
 .vh {
 	border: 0;
