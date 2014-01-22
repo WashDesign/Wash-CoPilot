@@ -1,0 +1,47 @@
+// ******************************
+// ! Images             
+// ******************************   
+ 
+
+.img--right{
+    float:right;
+}
+.img--left{
+    float:left;
+}
+.img--center{
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+
+    // ******************************
+    // ! MQ - Mobile               
+    // ******************************
+    @include mq( $from: mobile ) {
+     
+    }
+     
+        // ******************************
+        // ! MQ - Tablet               
+        // ******************************
+        @include mq( $from: tablet ) {
+         
+        }
+         
+         
+            // ******************************
+            // ! MQ - Desktop               
+            // ******************************
+            @include mq( $from: desktop ) {
+                 
+                 
+            }
+             
+                // ******************************
+                // ! MQ - Wide               
+                // ******************************
+                @include mq( $from: wide ) {
+                     
+                }

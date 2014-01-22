@@ -1,0 +1,56 @@
+// ******************************
+// ! NAV              
+// ******************************   
+ 
+.nav {
+     
+    .nav__tier {
+        margin: 0;
+        padding: 0; 
+    }
+     
+    .nav__item {
+        position: relative;
+        list-style: none;
+    }
+     
+    .nav__link {
+        display: inline-block;
+				text-decoration: none;
+        //@include transition(all, 0.4s, linear);
+         
+    }
+     
+}
+ 
+ 
+ 
+    // ******************************
+    // ! MQ - Mobile               
+    // ******************************
+    @include mq( $from: mobile ) {
+     
+    }
+     
+        // ******************************
+        // ! MQ - Tablet               
+        // ******************************
+        @include mq( $from: tablet ) {
+     
+        }
+         
+         
+            // ******************************
+            // ! MQ - Desktop               
+            // ******************************
+            @include mq( $from: desktop ) {
+                 
+ 
+            }
+             
+                // ******************************
+                // ! MQ - Wide               
+                // ******************************
+                @include mq( $from: wide ) {
+                     
+                }

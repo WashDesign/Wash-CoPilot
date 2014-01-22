@@ -3,13 +3,13 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-    	<meta charset="utf-8">
-    	<title>HTML Template</title>
-    	
-    	<!-- RWD -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="utf-8">
+		<title>HTML Template</title>
+		
+		<!-- Viewport -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- IE 10 Metro tile icon  -->
 		<meta name="msapplication-TileColor" content="#FFFFFF">
@@ -17,30 +17,100 @@
 		
 		<!-- SEO -->
 		<meta name="description" content="Add page description">
-		        
+		
 		<!-- CSS -->
-        <link rel="stylesheet" href="assets/css/main.css">
-        
-        <!-- IE CSS -->
-        <!--[if lt IE 9]>
-			<link rel="stylesheet" href="assets/css/ie.css">
+		<link rel="stylesheet" href="assets/css/main.css">
+		
+		<!-- IE CSS -->
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="assets/css/ie.css">
+		<![endif]-->
+		
+		<!-- Modernizr -->
+		<script src="assets/js/inc/modernizr-2.6.3.min.js"></script>
+
+		<!--[if lt IE 9]>
+			// Main Fix
+			<script> window.html5.elements = 'main'; window.html5.shivDocument(document);</script>
+			// Respond
+			<script src="assets/js/inc/respond.js"></script></script>
+			// Selectivizr
+			<script src="assets/js/inc/selectivizr.js"></script>
 		<![endif]-->
 
-        <!-- Modernizr -->
-        <script src="assets/js/inc/modernizr-2.6.3.min.js"></script>
-        
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
+	</head>
+  	<body>
+			<!--[if lt IE 7]>
+				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+			<![endif]-->
 
-		<p>...</p>
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="assets/js/inc/jquery-1.9.1.min.js"><\/script>')</script>
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+			<header class="site-header" role="banner">
+				<div class="constrain grp">
+					
+					<div class="site-logo" itemscope="" itemtype="http://schema.org/Organization">
+						<a class="site-logo__link" itemprop="url" href="#" rel="home">
+							<h1 class="vh" itemprop="name">Company Name</h1>
+							<img class="site-logo__img" itemprop="logo" src="assets/img/logo.svg" alt="logo" width="" height="">
+						</a>
+					</div>
+				
+					<button id="js-btn--menu" class="btn btn--menu htd">Menu</button> 
+					
+					<nav id="js-nav--primary" class="nav nav--primary grp" role="navigation">
+						<ul class="nav__tier nav__tier--1">
+							<li class="nav__item is-current">
+								<a class="nav__link is-active" href="#">Menu Item</a>
+								<ul class="nav__tier nav__tier--2">
+									<li class="nav__item">
+										<a class="nav__link" href="#">Menu Item</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link" href="#">Menu Item</a>
+									</li>	
+								</ul>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Menu Item</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Menu Item</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Menu Item</a>
+							</li>
+							<li class="nav__item is-secondary htd">
+								<a class="nav__link" href="#">Menu Item</a>
+							</li>
+						</ul>
+					</nav>
+				
+				</div> <!-- END .constrain  -->
+			</header>
+			
+			<main class="site-content" role="main">
+				<div class="constrain grp">
+					
+				</div> <!-- END .constrain  -->
+			</main> 
+			
+			<footer class="site-footer" role="contentinfo"> 
+				<div class="constrain grp">
+				
+					<div class="footer-physical-address" itemscope="" itemtype="http://schema.org/PostalAddress">
+							<span itemprop="name">Company Name</span><br>
+							<span itemprop="streetAddress">123 Street Address</span><br>
+							<span itemprop="addressRegion">Region</span><br>
+							<span itemprop="postalCode">PostCode</span>
+					</div>
+			
+				</div> <!-- END .constrain  -->				
+			</footer>
+			
+			
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="assets/js/inc/jquery-1.9.1.min.js"><\/script>')</script>
+      <script src="assets/js/plugins.js"></script>
+      <script src="assets/js/main.js"></script>
 
     </body>
 </html>
