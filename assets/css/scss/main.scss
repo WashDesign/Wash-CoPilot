@@ -1,72 +1,24 @@
-/******************************************************************
 
-Stylesheet: Main Stylesheet
+// ******************************
+// ! CONFIG              
+// ******************************	
 
-******************************************************************/
-
-
-@import "normalize";
-@import "helpers";
-@import "mixins";
-@import "styleguide";
-
-/*
-BASE (MOBILE) SIZE
-*/
-
-@import "base";
-
-/*
-LARGER MOBILE DEVICES
-*/
-@media only screen and (min-width: 30.063em) {
-
-	@import "481up";
-
-} // end of media query
-
-/*
-TABLET & SMALLER LAPTOPS
-*/
-@media only screen and (min-width: 48.000em) {
-
-	@import "grid";
-
-	@import "768up";
-
-} // end of media query
-
-/*
-DESKTOP
-*/
-@media only screen and (min-width: 64.375em) {
-
-	@import "1030up";
-
-} // end of media query
-
-/*
-LARGE VIEWING SIZE
-*/
-@media only screen and (min-width: 77.500em) {
-
-	@import "1240up";
-
-} // end of media query
+@import "config/_config";
 
 
-/*
-iPHONE 5 MEDIA QUERY
-*/
-@media (device-height: 35.500em) and (-webkit-min-device-pixel-ratio: 2) {
-  
-  // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
-  
-}
+// ******************************
+// ! SITE                
+// ******************************	
 
-/*
-PRINT STYLESHEET
-*/
-@media print {
-	@import "print";
-}
+@import "_site";
+
+
+// ******************************
+// ! BASE                
+// ******************************	
+
+@import "base/_base";
+
+
+
+
