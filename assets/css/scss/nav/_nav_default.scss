@@ -1,7 +1,5 @@
-// ******************************
-// ! NAV              
-// ******************************   
- 
+// ! Nav Default              
+   
 .nav {
      
     .nav__tier {
@@ -15,42 +13,8 @@
     }
      
     .nav__link {
-        display: inline-block;
-				text-decoration: none;
-        //@include transition(all, 0.4s, linear);
-         
+		display: inline-block;
+		text-decoration: none;
     }
      
 }
- 
- 
- 
-    // ******************************
-    // ! MQ - Mobile               
-    // ******************************
-    @include mq( $from: mobile ) {
-     
-    }
-     
-        // ******************************
-        // ! MQ - Tablet               
-        // ******************************
-        @include mq( $from: tablet ) {
-     
-        }
-         
-         
-            // ******************************
-            // ! MQ - Desktop               
-            // ******************************
-            @include mq( $from: desktop ) {
-                 
- 
-            }
-             
-                // ******************************
-                // ! MQ - Wide               
-                // ******************************
-                @include mq( $from: wide ) {
-                     
-                }

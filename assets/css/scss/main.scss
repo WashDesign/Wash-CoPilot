@@ -1,37 +1,22 @@
-// ******************************
 // ! CONFIG              
-// ******************************	
+@import "config/config";
 
-@import "config/_config";
-
-// ******************************
 // ! BASE                
-// ******************************	
+@import "base/base";
 
-@import "base/_base";
-
-// ******************************
 // ! SITE                
-// ******************************	
+@import "site/site";
 
-@import "site/_site";
-
-// ******************************
 // ! NAV                
-// ******************************	
+@import "nav/nav";
 
-@import "nav/_nav";
+// ! OBJECTS                
+@import "objects/objects";
 
-// ******************************
 // ! MODULE                
-// ******************************	
+@import "module/module";
 
-@import "module/_module";
-
-// ******************************
 // ! PRINT                
-// ******************************	
-
 @media print {
-	@import "config/_print";
+	@import "config/print";
 }
