@@ -1,1 +1,13 @@
 // ! Buttons  
+
+.btn {
+	background: none;
+	border: none;
+	color: $white;
+	display: inline-block;
+	padding: 1em 0;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	background-clip: padding-box;
+	@include transition(all, 400ms, ease-in-out);
+}	
