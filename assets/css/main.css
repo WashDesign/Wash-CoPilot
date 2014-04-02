@@ -74,9 +74,7 @@ textarea {
   .grp:after {
     clear: both; }
 
-*,
-*:after,
-*:before {
+* {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -353,21 +351,6 @@ table {
 .nav .nav__link {
   display: inline-block;
   text-decoration: none; }
-
-.btn {
-  background: none;
-  border: none;
-  color: white;
-  display: inline-block;
-  padding: 1em 0;
-  text-transform: uppercase;
-  -webkit-appearance: none;
-  background-clip: padding-box;
-  -webkit-transition: all 400ms ease-in-out;
-  -moz-transition: all 400ms ease-in-out;
-  -ms-transition: all 400ms ease-in-out;
-  -o-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out; }
 
 @media print {
   * {
